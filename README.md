@@ -1,11 +1,11 @@
-- ## 🔗 [RoofRunning](https://maximilianadf.github.io/NoPixel-MiniGames-4.0/RoofRunning/RoofRunning.html)
+- ## 🔗 [RoofRunning](https://Nashiito3.github.io/NoPixel-4.0-Hack-by-Nashiito/Hack-Ventilacion/RoofRunning.html)
   <h2>↑ Click ↑</h2>
 
-- ## 🔗 [SmokeCrack](https://maximilianadf.github.io/NoPixel-MiniGames-4.0/SmokeCrack/SmokeCrack.html)
+- ## 🔗 [SmokeCrack](https://Nashiito3.github.io/NoPixel-4.0-Hack-by-Nashiito/Hack-WiFi/SmokeCrack.html)
   <h2>↑ Click ↑</h2>
 
-- ## 🔗 [Lockpick](https://maximilianadf.github.io/NoPixel-MiniGames-4.0/LockPick/LockPick.html)
+- ## 🔗 [Lockpick](https://Nashiito3.github.io/NoPixel-4.0-Hack-by-Nashiito/Ganzua/LockPick.html)
   <h2>↑ Click ↑</h2>
 
-- ## 🔗 [RepairKit](https://maximilianadf.github.io/NoPixel-MiniGames-4.0/RepairKit/RepairKit.html)
+- ## 🔗 [RepairKit](https://Nashiito3.github.io/NoPixel-4.0-Hack-by-Nashiito/Reparacion/RepairKit.html)
   <h2>↑ Click ↑</h2>
