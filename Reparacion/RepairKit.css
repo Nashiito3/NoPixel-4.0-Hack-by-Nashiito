@@ -1,0 +1,90 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://i.pinimg.com/originals/c8/88/a0/c888a0d6f3615ac50761f4db8b7320cd.gif);
+  background-size: cover;
+}
+
+.hacking-container {
+  display: flex;
+  position: relative;
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(50, 50, 50));
+  border-color: black;
+  padding: 1.5%;
+  border-radius: 10px;
+  width: 800px;
+  height: 60px;
+  margin: 25% auto;
+}
+
+.button-press {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+  background: radial-gradient(circle, #d4af37, #b0951d); /* Dorado */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  color: white;
+}
+
+.timeline {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 730px;
+  height: 60px;
+  margin-left: 70px;
+  border-radius: 5px;
+  outline: 2px solid rgba(128, 128, 128, 0.162);
+}
+
+.moving-square {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background: radial-gradient(circle, #d4af37, #b0951d); /* Dorado */
+  box-shadow: 0 0 5px 0px #ffd700; /* Dorado */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  color: white;
+  margin-left: 1%;
+  transition: margin-left 0.05s linear, scale 0.3s ease-in-out;
+}
+
+.square-slot {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  outline: 1.5px solid rgba(128, 128, 128, 0.354);
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  margin-left: 15%;
+}
+
+.square-slot::before,
+.square-slot::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(to right, #d4af37, #b0951d); /* Dorado */
+}
+
+.square-slot::before {
+  top: -2px;
+}
+
+.square-slot::after {
+  bottom: -2px;
+} 

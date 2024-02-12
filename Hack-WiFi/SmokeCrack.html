@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmokeCrack</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SmokeCrack.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="SmokeCrack.js"></script>
+</head>
+<body>
+    <div class="crack-container">
+        <div class="crack-button" id="crackButton" style="display: flex; justify-content: center; align-items: center;">
+            <button type="button" onclick="startCracking()" style="background-color: #333; color: #fff; border-color: goldenrod; padding: 10px 20px; border-radius: 5px; border: none; outline: none; cursor: pointer;">
+                <h1>Empezar</h1>
+            </button>
+        </div>
+    </div>
+
+    <div class="minigame-container">
+        <div class="minigame-header">
+            <h2>Va que es fácil!</h2>
+            <p>Hackeando...</p>
+        </div>
+        <div class="letter-container">
+        </div>
+        <div class="feedback-container">
+        </div>
+        <div class="timer-container">
+            <div class="timer-progress">
+                <div class="timer-progress-bar">
+                    <div class="timer-progress-bar-fill"></div>
+                </div>
+            </div>
+            <span class="timer-seconds"></span>
+        </div>
+        <div class="minigame-over">
+            <h2>Hackeo Fallido</h2>
+            <p>Más malo hackeando que Archie</p>
+        </div>
+    </div>
+</body>
+</html>

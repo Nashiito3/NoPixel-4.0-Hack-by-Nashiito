@@ -1,0 +1,246 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+      url(https://i.pinimg.com/originals/c8/88/a0/c888a0d6f3615ac50761f4db8b7320cd.gif);
+    background-size: cover;
+}
+
+/* Contenedor principal */
+.hack-box-container {
+    border-radius: 5px;
+    outline: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    width: 600px;
+    height: 800px;
+}
+
+/* Contenedor de información */
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -20px;
+    margin-left: -280px;
+}
+
+/* Estilos para títulos */
+.info-container h2 {
+    font-size: 25px;
+    color: #f0f0f0; 
+    text-shadow: 0 0 2px rgb(127, 255, 191);
+}
+
+/* Estilos para texto de información */
+.info-container p {
+    font-size: 15px;
+    color: #969696;
+}
+
+/* Contenedor exterior */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+}
+
+/* Contenedor del juego */
+.hack-box {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 580px;
+    height: 580px;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+}
+
+/* Línea de separación */
+.line {
+    width: 70%;
+    outline: 1.2px solid #fff;
+}
+
+/* Contenedor del candado */
+.lock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    width: 580px;
+    height: 580px;
+}
+
+/* Círculo del candado */
+.lock-circle {
+    outline: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Bola del candado */
+.ball {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Contenedor de botones de rotación */
+.rotate-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+/* Estilos de los botones de rotación */
+.rotate-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 287px;
+    height: 50px;
+    background-color: #f0f0f0; 
+    color: #141414;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 10px; 
+    transition: background-color 0.1s ease-in-out;
+}
+
+.rotate-button:hover {
+    background-color: rgba(210, 210, 210, 0.877); 
+}
+
+/* Contenedor de botón de envío */
+.submit-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Botón de envío */
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 579px;
+    height: 50px;
+    background-color: #ffe600;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #ffcc00; 
+}
+
+/* Contenedor de temporizador */
+.timer-container {
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    height: 10px;
+}
+
+/* Barra de progreso del temporizador */
+.timer-progress-bar {
+    background-color: #ff6600;
+    width: 100%;
+    height: 100%;
+    transition: width 1s linear;
+}
+
+/* Contenedor de posición */
+.position-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 580px;
+    height: 580px;
+}
+
+/* Círculo de posición */
+.position-circle {
+    fill: none;
+    stroke-width: 5px;
+    transform-origin: 50% 50%;
+}
+
+/* Mensaje de pérdida */
+.lose-message {
+    gap: 10px;
+    margin-top: -40px;
+    margin-left: 340px;
+    display: none;
+    color: #fff;
+    padding: 0px 18px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #77001c;
+}
+
+/* Mensaje de victoria */
+.win-message {
+    gap: 10px;
+    margin-top: -40px;
+    margin-left: 340px;
+    display: none;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #88ff00;
+}
+
+/* Estilos de texto en mensajes */
+.lose-message p, .win-message p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Iconos en mensajes */
+.fa-circle-check {
+    font-size: 25px;
+    color: #31ff91;
+}
+
+.fa-circle-xmark {
+    font-size: 25px;
+    color: #ff3e3e;
+}

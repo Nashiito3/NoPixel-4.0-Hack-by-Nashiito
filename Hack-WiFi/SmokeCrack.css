@@ -1,0 +1,222 @@
+/* Estilos generales */
+body {
+    color: aliceblue;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+      url(https://i.pinimg.com/originals/c8/88/a0/c888a0d6f3615ac50761f4db8b7320cd.gif);
+    background-size: cover;
+}
+
+/* Estilos del botón de crack */
+.crack-container button {
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #e6e6e6; /* Blanco */
+    border-color: black;
+    color: black; /* Negro */
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilos del contenedor del juego */
+.minigame-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    height: 800px;
+}
+
+/* Estilos del encabezado del juego */
+.minigame-header {
+    margin: -100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minigame-header h2,
+.minigame-header p {
+    margin: 0;
+}
+
+.minigame-header h2 {
+    font-size: 30px;
+    color: rgb(212, 130, 0);
+    text-shadow: 0 0 2px rgb(156, 95, 0);
+}
+
+.minigame-header p {
+    margin-bottom: 20px;
+    color: rgba(208, 208, 208, 0.834);
+}
+
+/* Estilos del contenedor de letras */
+.letter-container {
+    border-radius: 5px;
+    background-color: rgba(153, 153, 153, 0.319);
+    padding: 3px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Estilos del cuadro de letras */
+.letter-square {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #000000cb;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 0 0 rgb(182, 182, 182);
+    align-items: center;
+    margin: 5px;
+}
+
+/* Estilos del contenedor de feedback */
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 3px;
+}
+
+/* Estilos del círculo de feedback */
+.feedback-circle,
+.feedback-line {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 3px solid rgba(153, 153, 153, 0.319);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Estilos de la línea de feedback */
+.feedback-line {
+    flex: 1;
+    height: 2px;
+    background-color: rgba(153, 153, 153, 0.319);
+}
+
+/* Estilos del icono de marca de verificación */
+.feedback-circle .fa-check {
+    color: rgb(84, 255, 164);
+    text-shadow: 0 0 2px rgb(127, 255, 191);
+}
+
+/* Estilos del marcador de verificación */
+.check-mark {
+    outline: 3px solid rgb(84, 255, 164);
+    background-color: rgba(84, 255, 164, 0.285);
+}
+
+/* Estilos del icono de marca de cruz */
+.feedback-circle .fa-times {
+    color: rgb(255, 84, 84);
+    text-shadow: 0 0 2px rgb(255, 127, 127);
+}
+
+/* Estilos del marcador de cruz */
+.x-mark {
+    outline: 3px solid  rgb(255, 84, 84);
+    background-color: rgba(255, 127, 127, 0.285);
+}
+
+/* Estilos del contenedor del temporizador */
+.timer-container {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Estilos del progreso del temporizador */
+.timer-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(153, 153, 153, 0.319);
+    border-radius: 2px;
+    height: 100%;
+    width: calc(100% - 80px);
+}
+
+/* Estilos de la barra de progreso del temporizador */
+.timer-progress-bar {
+    height: 30%;
+    width: 95%;
+    background-color: rgba(84, 255, 164, 0.285);
+    border-radius: 4px;
+}
+
+/* Estilos del relleno de la barra de progreso del temporizador */
+.timer-progress-bar-fill {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 255, 164);
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+/* Estilos del contador de segundos del temporizador */
+.timer-seconds {
+    background-color: rgba(153, 153, 153, 0.319);
+    border-radius: 2px;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: gray;
+}
+
+/* Estilos del contenedor de finalización del juego */
+.minigame-over {
+    background-color: rgba(255, 127, 127, 0.285);
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    width: 1000px;
+    height: 100px;
+    position: fixed;
+}
+
+/* Estilos del encabezado de finalización del juego */
+.minigame-over h2,
+.minigame-over p {
+    margin: 0;
+}
+
+.minigame-over h2 {
+    font-weight: 500;
+    color: rgb(255, 84, 84);
+    text-shadow: 0 0 2px rgb(255, 127, 127);
+    font-size: 25px;
+    padding: 0 15px;
+}
+
+.minigame-over p {
+    color: rgba(208, 208, 208, 0.834);
+}

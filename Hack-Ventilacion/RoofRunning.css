@@ -1,0 +1,158 @@
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://i.pinimg.com/originals/c8/88/a0/c888a0d6f3615ac50761f4db8b7320cd.gif);
+  background-size: cover;
+}
+
+/* Contenedor principal */
+.hack-box-container {
+  position: relative;
+  border-radius: 10px;
+  outline: 3px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+  width: 600px;
+  height: 670px;
+}
+
+/* Contenedor exterior */
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+}
+
+/* Contenedor del candado */
+.lock-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 580px;
+  height: 580px;
+  z-index: 999;
+}
+
+/* Contenedor de temporizador */
+.timer-container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    height: 10px;
+    margin-top: auto;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Barra de progreso del temporizador */
+.timer-progress-bar {
+  bottom: 100px;
+  background-color: #ff6600;
+  width: 100%;
+  height: 100%;
+  transition: width 1s linear;
+}
+
+/* Contenedor de posición */
+.position-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 580px;
+  height: 580px;
+}
+
+/* Mensaje de pérdida */
+.lose-message {
+  gap: 10px;
+  margin-top: -50px;
+  margin-bottom: 15px;
+  margin-left: 440px;
+  display: none;
+  color: white;
+  padding: 0px 18px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 0, 0);
+}
+
+/* Mensaje de victoria */
+.win-message {
+  gap: 10px;
+  margin-top: -50px;
+  margin-bottom: 15px;
+  margin-left: 440px;
+  display: none;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 255, 0);
+}
+
+/* Estilos de texto en mensajes */
+.lose-message p, .win-message p {
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.cube {
+  width: 110px;
+  height: 100px;
+  border: 1.5px solid #fff;  
+  background:
+  linear-gradient(to right, rgba(255, 255, 255, 0.74) 1px, transparent 1px) 2px 2px,
+  linear-gradient(to right, rgba(255, 255, 255, 0.74) 1px, transparent 1px) 2px calc(100% - 2px),
+  linear-gradient(to left, rgba(255, 255, 255, 0.74) 1px, transparent 1px) calc(100% - 2px) 2px,
+  linear-gradient(to left, rgba(255, 255, 255, 0.74) 1px, transparent 1px) calc(100% - 2px) calc(100% - 2px),
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.74) 1px, transparent 1px) 2px 2px,
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.74) 1px, transparent 1px) calc(100% - 2px) 2px,
+  linear-gradient(to top, rgba(255, 255, 255, 0.74) 1px, transparent 1px) 2px calc(100% - 2px),
+  linear-gradient(to top, rgba(255, 255, 255, 0.74) 1px, transparent 1px) calc(100% - 2px) calc(100% - 2px);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.empty {
+  background: none;
+  border: none;
+}
+
+.cuber {
+  background-color: var(--cube-color-red, rgb(255, 0, 0));
+  box-shadow: 0px 10px 0px var(--cube-color-red-shadow, rgb(96, 35, 34));
+}
+
+.cubeg {
+  background-color: var(--cube-color-green, rgb(123, 255, 0));
+  box-shadow: 0px 10px 0px var(--cube-color-green-shadow, rgb(79, 122, 59));
+}
+
+.cubeb {
+  background-color: var(--cube-color-blue, rgb(0, 149, 255));
+  box-shadow: 0px 10px 0px var(--cube-color-blue-shadow, rgb(40, 71, 86));
+}
