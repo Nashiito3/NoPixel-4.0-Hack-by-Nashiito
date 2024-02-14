@@ -9,6 +9,23 @@ body {
     background-size: cover;
 }
 
+.icon-container {
+    width: 40px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    height: 40px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    background-color: #1e1e1e; /* Fondo gris oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff6600; /* Borde dorado */
+}
+  
+  /* Estilo del ícono */
+.icon-container i {
+    color: rgb(253, 253, 253); /* Color blanco para el ícono */
+    font-size: 24px; /* Tamaño del ícono */
+}
+
 /* Estilos del botón de crack */
 .crack-container button {
     width: auto;
@@ -163,7 +180,7 @@ body {
 .timer-progress-bar {
     height: 30%;
     width: 95%;
-    background-color: rgba(84, 255, 164, 0.285);
+    background-color: rgb(0, 0, 0);
     border-radius: 4px;
 }
 
@@ -171,7 +188,7 @@ body {
 .timer-progress-bar-fill {
     height: 100%;
     width: 100%;
-    background-color: rgb(84, 255, 164);
+    background-color: #ff6600;
     border-radius: 4px;
     transition: width 1s ease-in-out;
 }

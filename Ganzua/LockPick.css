@@ -7,6 +7,24 @@ body {
     background-size: cover;
 }
 
+/* Estilo del contenedor del ícono */
+.icon-container {
+    width: 40px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    height: 40px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    background-color: #1e1e1e; /* Fondo gris oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff6600; /* Borde dorado */
+}
+  
+  /* Estilo del ícono */
+.icon-container i {
+    color: rgb(253, 253, 253); /* Color blanco para el ícono */
+    font-size: 24px; /* Tamaño del ícono */
+}
+
 /* Contenedor principal */
 .hack-box-container {
     border-radius: 5px;
